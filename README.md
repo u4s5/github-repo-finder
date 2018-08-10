@@ -1,5 +1,5 @@
 # github-repo-finder
-Android app to search through Github repositories
+Android app to search through Github repositories (Kotlin, MVP, Retrofit 2, RxJava, Dagger 2)
 
 
 
