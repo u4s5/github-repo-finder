@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Github Repo Finder</string>
+
+    <string name="search_edit_hint">Repo Name</string>
+
+    <string name="repo_name_text">Name: </string>
+    <string name="repo_lang_text">Language: </string>
+
+    <string name="unknown_lang_text">Unknown Language</string>
+
+    <string name="empty_query_warning">Empty search query!</string>
+    <string name="no_results_warning">No results!</string>
+
+    <string name="request_limit_error">Too many requests! Max = 10 per minute.</string>
+    <string name="no_connection_error">No connection. Please check your settings.</string>
+    <string name="unknown_error">Unknown error. Sorry.</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_search_button">Search Button</string>
+    <string name="cd_user_avatar">User Avatar</string>
 </resources>
