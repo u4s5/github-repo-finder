@@ -9,6 +9,6 @@ Android app to search through Github repositories (Kotlin, MVP, Retrofit 2, RxJa
 
 ### Screenshots: 
 
-<img align="left" width="360" height="640" src="screenshots/github-repo-finder-screenshot1">
+<img align="left" width="360" height="640" src="screenshots/github-repo-finder-screenshot1.png">
 
-<img align="right" width="360" height="640" src="screenshots/github-repo-finder-screenshot2">
+<img align="right" width="360" height="640" src="screenshots/github-repo-finder-screenshot2.png">
