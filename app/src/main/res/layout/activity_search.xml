@@ -16,7 +16,7 @@
             android:layout_height="@dimen/search_panel_height"
             android:layout_weight="1"
             android:hint="@string/search_edit_hint"
-            android:imeOptions="actionSearch"
+            android:imeOptions="actionSearch|flagNoExtractUi"
             android:inputType="text"/>
 
         <ImageButton
