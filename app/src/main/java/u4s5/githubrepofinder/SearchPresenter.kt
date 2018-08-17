@@ -16,8 +16,9 @@ import java.net.UnknownHostException
 import javax.inject.Inject
 
 class SearchPresenter @Inject constructor(
-        private var model: SearchModel,
-        private val context: Context) : BasePresenter() {
+        private val model: SearchModel,
+        private val context: Context
+) : BasePresenter() {
 
     private var searchView: SearchView? = null
 
@@ -50,16 +51,20 @@ class SearchPresenter @Inject constructor(
                 })
     }
 
-    fun onSearchItemClicked(position: Int) = model.lastData?.get(position)?.apply {
-        userName.let { searchView?.showUserName(it) }
-        Glide.with(context)
-                .asBitmap()
-                .load(userAvatar)
-                .into(object : SimpleTarget<Bitmap>() {
-                    override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                        searchView?.showUserAvatar(resource)
-                    }
-                })
+    fun onSearchItemClicked(position: Int) {
+        searchView?.showUserInfoArea()
+
+        model.lastData?.get(position)?.apply {
+            searchView?.showUserName(userName)
+            Glide.with(context)
+                    .asBitmap()
+                    .load(userAvatar)
+                    .into(object : SimpleTarget<Bitmap>() {
+                        override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
+                            searchView?.showUserAvatar(resource)
+                        }
+                    })
+        }
     }
 
     fun onDestroy() {

@@ -20,6 +20,8 @@ interface SearchView {
 
     fun showNoResultsWarning()
 
+    fun showUserInfoArea()
+
     fun showUserName(userName: String)
 
     fun showUserAvatar(avatar: Bitmap)

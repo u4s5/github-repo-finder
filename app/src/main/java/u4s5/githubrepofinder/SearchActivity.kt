@@ -106,12 +106,15 @@ class SearchActivity : DaggerActivity(), SearchView {
 
     override fun showNoResultsWarning() = middleToast(R.string.no_results_warning)
 
-    override fun showUserName(userName: String) {
+    override fun showUserInfoArea() {
         userInfoFragment = fragmentManager.findFragmentByTag(UserInfoFragment.DIALOG_TAG) as? UserInfoFragment
         if (userInfoFragment == null) {
             userInfoFragment = UserInfoFragment()
             userInfoFragment?.show(fragmentManager, UserInfoFragment.DIALOG_TAG)
         }
+    }
+
+    override fun showUserName(userName: String) {
         userInfoFragment?.setUserName(userName)
     }
 
