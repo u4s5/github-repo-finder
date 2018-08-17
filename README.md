@@ -3,7 +3,7 @@ Android app to search through Github repositories (Kotlin, MVP, Retrofit 2, RxJa
 
 
 
- ### [APK](https://yadi.sk/d/zI9_JUwM3a6nq6)
+ ### [APK](app/build/outputs/apk/debug/app-debug.apk)
 
 
 
