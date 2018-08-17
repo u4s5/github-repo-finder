@@ -100,17 +100,11 @@ class SearchActivity : DaggerActivity(), SearchView {
         searchResultsAdapter.data = items
     }
 
-    override fun showKeyboard(visible: Boolean) {
-        search_button.showKeyboard(false)
-    }
+    override fun showKeyboard(visible: Boolean) = search_button.showKeyboard(false)
 
-    override fun showEmptyQueryWarning() {
-        middleToast(R.string.empty_query_warning)
-    }
+    override fun showEmptyQueryWarning() = middleToast(R.string.empty_query_warning)
 
-    override fun showNoResultsWarning() {
-        middleToast(R.string.no_results_warning)
-    }
+    override fun showNoResultsWarning() = middleToast(R.string.no_results_warning)
 
     override fun showUserName(userName: String) {
         userInfoFragment = fragmentManager.findFragmentByTag(UserInfoFragment.DIALOG_TAG) as? UserInfoFragment
